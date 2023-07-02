@@ -56,3 +56,56 @@ img {
     box-sizing: inherit;
   }
 
+body{
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #102746;
+}
+
+.header{
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.wrapper{
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.header_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 56px;
+}
+
+.header_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header_item{
+  margin-right: 82px;
+}
+
+.header_item:last-child{
+margin-right: 0;
+}
+
+.header_link{
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.header_link:hover, .header_link:focus, .header_link:active{
+  opacity: .75;
+}

@@ -88,7 +88,6 @@ body {
 }
 
 .header {
-  background-color: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -137,3 +136,13 @@ body {
 }
 
 /* Header styles end */
+
+/* Intro styles start */
+
+.intro {
+  height: 100vh;
+  background: url(../img/intro-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+/* Intro styles end */

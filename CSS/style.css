@@ -34,15 +34,14 @@ img {
   height: auto;
 }
 
-
 /* lato-regular - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2');
+  src: url("../fonts/lato-v24-latin-regular.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -50,10 +49,10 @@ img {
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/lato-v24-latin-700.woff2') format('woff2');
+  src: url("../fonts/lato-v24-latin-700.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -61,10 +60,10 @@ img {
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/lato-v24-latin-900.woff2') format('woff2');
+  src: url("../fonts/lato-v24-latin-900.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -79,7 +78,7 @@ html {
 }
 
 body {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-size: 16px;
   line-height: 1.2;
@@ -132,7 +131,7 @@ body {
 .header_link:hover,
 .header_link:focus,
 .header_link:active {
-  opacity: .75;
+  opacity: 0.75;
 }
 
 /* Header styles end */
@@ -162,6 +161,52 @@ body {
   line-height: 24px;
   color: #fff;
   margin-bottom: 59px;
+}
+
+.search-form_info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-form_wrap {
+  border: 0;
+}
+
+.search-form_field {
+  width: 297px;
+  background: transparent url(../img/circle-icon.svg) no-repeat left 6px;
+  background-size: 20px;
+  border: none;
+  border-bottom: 2px solid #bfc0c5;
+  margin-right: 60px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  outline: none;
+}
+
+.search-form_field::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.search-form_submit {
+  padding: 15px 39px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  background: #1b7dff;
+  border: 0;
+}
+
+.search-form_submit:hover,
+.search-form_submit:focus,
+.search-form_submit:active {
+  background: #0656bf;
 }
 
 /* Intro styles end */

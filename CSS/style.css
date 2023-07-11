@@ -210,3 +210,27 @@ body {
 }
 
 /* Intro styles end */
+
+/* Benefits styles start */
+
+.benefits_wrap {
+  max-width: 1262px;
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px 0px rgba(21, 24, 36, 0.16);
+  position: relative;
+}
+
+.benefits_title {
+  width: 100%;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 42px;
+  padding: 93px 100px 88px 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  background-color: #fff;
+}
+/* Benefits styles end */

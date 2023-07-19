@@ -34,15 +34,14 @@ img {
   height: auto;
 }
 
-
 /* lato-regular - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2');
+  src: url("../fonts/lato-v24-latin-regular.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -50,10 +49,10 @@ img {
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/lato-v24-latin-700.woff2') format('woff2');
+  src: url("../fonts/lato-v24-latin-700.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -61,10 +60,10 @@ img {
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/lato-v24-latin-900.woff2') format('woff2');
+  src: url("../fonts/lato-v24-latin-900.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -79,7 +78,7 @@ html {
 }
 
 body {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-size: 16px;
   line-height: 1.2;
@@ -87,8 +86,12 @@ body {
   color: #102746;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
-  background-color: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -133,7 +136,160 @@ body {
 .header_link:hover,
 .header_link:focus,
 .header_link:active {
-  opacity: .75;
+  opacity: 0.75;
 }
 
 /* Header styles end */
+
+/* Intro styles start */
+
+.intro {
+  height: 100vh;
+  background: url(../img/intro-bg.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 263px;
+}
+
+.intro_title {
+  max-width: 619px;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+  color: white;
+  margin-bottom: 22px;
+}
+
+.intro_subtitle {
+  max-width: 546px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 59px;
+}
+
+.search-form_info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-form_wrap {
+  border: 0;
+}
+
+.search-form_field {
+  width: 297px;
+  background: transparent url(../img/circle-icon.svg) no-repeat left 6px;
+  background-size: 20px;
+  border: none;
+  border-bottom: 2px solid #bfc0c5;
+  margin-right: 60px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  outline: none;
+}
+
+.search-form_field::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.search-form_submit {
+  padding: 15px 39px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  background: #1b7dff;
+  border: 0;
+}
+
+.search-form_submit:hover,
+.search-form_submit:focus,
+.search-form_submit:active {
+  background: #0656bf;
+}
+
+/* Intro styles end */
+
+/* Benefits styles start */
+
+.benefits {
+  margin-bottom: 131px;
+}
+
+.benefits_wrap {
+  max-width: 1262px;
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px 0px rgba(21, 24, 36, 0.16);
+  position: relative;
+}
+
+.benefits_title {
+  width: 100%;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 42px;
+  padding: 93px 100px 88px 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  background-color: #fff;
+}
+
+.cards_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 55px;
+  padding: 0 100px;
+}
+
+.benefits_card {
+  grid-column: span 1;
+  margin-bottom: 112px;
+}
+
+.benefits_card-icon {
+  display: block;
+  max-width: 66px;
+  margin-bottom: 37px;
+}
+
+.benefits_card-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+
+.benefits_card-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 39px;
+}
+
+.benefits_card-more {
+  display: inline-block;
+  padding-right: 59px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #006dfe;
+  text-decoration: none;
+  background: url(../img/arrow-right-icon.svg) no-repeat 95% center;
+  transition: 0.2s all;
+}
+
+.benefits_card-more:hover,
+.benefits_card-more:focus {
+  background: url(../img/arrow-right-icon.svg) no-repeat right center;
+}
+
+/* Benefits styles end */

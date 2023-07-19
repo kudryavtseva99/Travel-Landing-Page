@@ -255,13 +255,10 @@ img {
   margin-bottom: 112px;
 }
 
-.benefits_card-pic {
+.benefits_card-icon {
+  display: block;
   max-width: 66px;
   margin-bottom: 37px;
-}
-
-.benefits_card-icon {
-  /* display: block; */
 }
 
 .benefits_card-title {

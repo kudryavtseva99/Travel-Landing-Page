@@ -96,9 +96,11 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  transition: .2s linear;
   padding-bottom: 20px;
   z-index: 999;
+}
+.header {
+  transition: .2s linear;
 }
 
 .header_active {

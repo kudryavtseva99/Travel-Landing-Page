@@ -9,14 +9,14 @@
         
         
     // }
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', () => {
             if (window.pageYOffset > 50) {
                 header.classList.add('header_active'); 
             } else {
                 header.classList.remove('header_active');  
             }
-}())
-});
+    });
+})();
 
 
 // Burger handler
@@ -31,4 +31,4 @@
     menuCloseItem.addEventListener('click', () => {
         menu.classList.remove('header_nav_active');
     });
-}());
+})();

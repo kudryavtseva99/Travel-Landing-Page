@@ -226,7 +226,7 @@ img {
 /* Intro styles start */
 
 .intro {
-  height: 100vh;
+  /* height: 100vh; */
   background: url(../img/intro-bg-min.jpg) no-repeat center;
   background-size: cover;
   padding-top: 263px;
@@ -239,7 +239,7 @@ img {
   font-weight: 500;
   line-height: 60px;
   color: white;
-  margin-bottom: 22px;
+  margin-bottom: 38px;
 }
 
 .intro_subtitle {
@@ -330,6 +330,7 @@ img {
 
 .benefits {
   margin-bottom: 131px;
+  margin-top: -100px;
 }
 
 .benefits_wrap {
@@ -347,12 +348,8 @@ img {
   font-weight: 500;
   line-height: 42px;
   padding: 93px 100px 88px 100px;
-  position: absolute;
   top: 0;
   left: 0;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
   background-color: #fff;
 }
 
